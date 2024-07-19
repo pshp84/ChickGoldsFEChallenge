@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+  }
+
+  :root {
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-green: #347C6A;
+    --clr-purple: #5762d5;
+    --clr-gray: #C7C7D3;
+    --space-xx: 30px;
+    --container-size:1440px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    background-color: #303141;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px){
+    :root{
+        --space-xx: 12px;
+    }
+    .footer-link-row,.price-dropdown{
+        width: 100%;
+    }
+    .search-result{
+        padding: 20px;
+    }
+    .payment-methods img, .payment-methods svg{
+        max-width: 40px;
+    }
+}
